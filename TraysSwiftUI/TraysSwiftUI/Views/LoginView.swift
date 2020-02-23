@@ -15,10 +15,14 @@ struct LoginView: View {
     var body: some View {
             VStack {
 
-                Image("logo").resizable().aspectRatio(contentMode: ContentMode.fit)
-                    .frame(width: CGFloat(74.0), height: CGFloat(74.0))
-                    .padding(Edge.Set.bottom, 20)
-
+//                Image("logo").resizable().aspectRatio(contentMode: ContentMode.fit)
+//                    .frame(width: CGFloat(74.0), height: CGFloat(74.0))
+//                    .padding(Edge.Set.bottom, 20)
+                
+                RoundedRectangle(cornerRadius: 25, style: .continuous)
+                    .fill(Color.blue)
+                    .frame(width: 200, height: 200)
+                
                 Text("Login").bold()
                 Text("Explore the world of Swift UI").font(.subheadline)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 70, trailing: 0))

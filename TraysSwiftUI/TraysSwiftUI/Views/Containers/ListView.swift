@@ -26,10 +26,9 @@ struct ListView  <Data, Content>: View
     var body: some View {
         VStack {
             Text("List View").foregroundColor(.black).bold()
-            ForEach(data) { item in
-                self.content(item)
-            }
-               
+                ForEach(data) { item in
+                    self.content(item)
+                }
         }
     }
 }
@@ -47,5 +46,6 @@ struct MediaRowCell: View {
             Text(media.title ?? "")
         }
         .aspectRatio(contentMode: .fill)
+        .foregroundColor(.accentColor)
     }
 }

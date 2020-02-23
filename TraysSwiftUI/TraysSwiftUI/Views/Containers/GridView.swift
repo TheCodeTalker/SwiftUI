@@ -25,7 +25,7 @@ struct GridView <Data, Content>: View
 
     private let data: [Data.Element]
     private let content: (Data.Element) -> Content
-
+    private let geometry: GeometryProxy
     // MARK: - INITIALIZERS
 
     /// Creates a QGrid that computes its cells on demand from an underlying
@@ -48,6 +48,7 @@ struct GridView <Data, Content>: View
                 vPadding: CGFloat = 10,
                 hPadding: CGFloat = 10,
                 tray: Tray? = nil,
+                geometry: GeometryProxy,
                 content: @escaping (Data.Element) -> Content) {
       self.data = data.map { $0 }
       self.content = content
@@ -58,6 +59,7 @@ struct GridView <Data, Content>: View
       self.vPadding = vPadding
       self.hPadding = hPadding
       self.tray = tray
+      self.geometry = geometry
     }
 
     // MARK: - COMPUTED PROPERTIES
@@ -81,14 +83,13 @@ struct GridView <Data, Content>: View
     
     public var body : some View {
         
-       GeometryReader { geometry in
-         ScrollView(showsIndicators: false) {
+        VStack {
             Text("GridView").foregroundColor(.black).bold()
             Spacer()
            VStack(spacing: self.vSpacing) {
              ForEach((0..<self.rows).map { GridIndex(id: $0) }) { row in
                self.rowAtIndex(row.id * self.cols,
-                               geometry: geometry)
+                               geometry: self.geometry)
              }
              // Handle last row
              if (self.data.count % self.cols > 0) {
@@ -100,7 +101,6 @@ struct GridView <Data, Content>: View
          }
          .padding(.horizontal, self.hPadding)
          .padding(.vertical, self.vPadding)
-       }
      }
 
     private func rowAtIndex(_ index: Int,
@@ -133,7 +133,8 @@ struct MediaCell: View {
     VStack() {
       Text(media.title ?? "").font(.headline).foregroundColor(.black)
       Text(media.desc ?? "trayname").font(.subheadline).foregroundColor(.black)
-        }
+    }
+    
   }
 }
 

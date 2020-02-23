@@ -18,18 +18,21 @@ struct HomeScreen: View {
     
     var body: some View {
         //id :  keypath/ identifiable / Hashable
-        List {
-            ForEach(viewModel.trays) { tray in
-                self.constructTray(tray: tray)
-            }
+        GeometryReader() { geometry in
+            List {
+                ForEach(self.viewModel.trays) { tray in
+                    self.constructTray(tray: tray, geometry: geometry)
+                }
+            }.padding(.top, 10)
         }
+
     }
     
-    func constructTray(tray:Tray) -> some View {
+    func constructTray(tray:Tray,geometry:GeometryProxy) -> some View {
         switch  tray.trayLayout {
         case .gridTray:
-                let grid = GridView(tray.items!, columns: 3, columnsInLandscape: 5, vSpacing: 10, hSpacing: 10, vPadding: 5, hPadding: 5) { item in
-                    MediaCell(media: item)
+                let grid = GridView(tray.items!, columns: 3, columnsInLandscape: 5, vSpacing: 5, hSpacing: 5, vPadding: 5, hPadding: 5,geometry: geometry) { item in
+                    MediaCell(media: item).background(Color.yellow)
                 }
                return  AnyView(grid)
         case .listTray:

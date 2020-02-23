@@ -26,6 +26,7 @@
 		4489C7B023FFEDDF002C4AD6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489C7AF23FFEDDF002C4AD6 /* HomeViewModel.swift */; };
 		4489C7B223FFF793002C4AD6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489C7B123FFF793002C4AD6 /* Router.swift */; };
 		4496B69E23FC69BE00252A30 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4496B69D23FC69BE00252A30 /* ListView.swift */; };
+		44E129982402BE9B0088FEC1 /* MediaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E129972402BE9B0088FEC1 /* MediaDetailView.swift */; };
 		44E275A823E7509C0037AFEC /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E275A723E7509C0037AFEC /* CarouselView.swift */; };
 		44EFEDE723EFF79D00F41BEF /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EFEDE623EFF79D00F41BEF /* Reference.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		4489C7AF23FFEDDF002C4AD6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4489C7B123FFF793002C4AD6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4496B69D23FC69BE00252A30 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		44E129972402BE9B0088FEC1 /* MediaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailView.swift; sourceTree = "<group>"; };
 		44E275A723E7509C0037AFEC /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		44EFEDE623EFF79D00F41BEF /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 			children = (
 				443BB0A523D9F01D003C5A40 /* GridView.swift */,
 				4496B69D23FC69BE00252A30 /* ListView.swift */,
+				44E129972402BE9B0088FEC1 /* MediaDetailView.swift */,
 				44E275A723E7509C0037AFEC /* CarouselView.swift */,
 			);
 			path = Containers;
@@ -261,6 +264,7 @@
 				443BB09F23D9EFF4003C5A40 /* Utility.swift in Sources */,
 				443BB08223D9EF38003C5A40 /* AppDelegate.swift in Sources */,
 				44EFEDE723EFF79D00F41BEF /* Reference.swift in Sources */,
+				44E129982402BE9B0088FEC1 /* MediaDetailView.swift in Sources */,
 				443BB0A123D9EFF4003C5A40 /* TrayModel.swift in Sources */,
 				4489C7A923FDA8E0002C4AD6 /* LoginView.swift in Sources */,
 				443BB08423D9EF38003C5A40 /* SceneDelegate.swift in Sources */,
