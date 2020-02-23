@@ -19,6 +19,66 @@
               "desc": "Cell 1",
               "imgURL": "",
               "mediaId": "12345"
+            },
+            {
+              "title": "cell 1",
+              "desc": "Cell 1",
+              "imgURL": "",
+              "mediaId": "12345"
+            },
+            {
+              "title": "cell 1",
+              "desc": "Cell 1",
+              "imgURL": "",
+              "mediaId": "12345"
+            },
+            {
+              "title": "cell 1",
+              "desc": "Cell 1",
+              "imgURL": "",
+              "mediaId": "12345"
+            }
+            ]
+        }
+        ]
+    },
+    {
+      "trayContentType": "inline",
+      "trayLayout": "listTray",
+      "trayName": "Poster-Tray",
+      "title": "posters",
+      "assets": [
+        {
+          "items": [
+            {
+              "title": "cell 1",
+              "desc": "Cell 1",
+              "imgURL": "",
+              "mediaId": "12345"
+            },
+            {
+              "title": "cell 1",
+              "desc": "Cell 1",
+              "imgURL": "",
+              "mediaId": "12345"
+            },
+            {
+              "title": "cell 1",
+              "desc": "Cell 1",
+              "imgURL": "",
+              "mediaId": "12345"
+            },
+            {
+              "title": "cell 1",
+              "desc": "Cell 1",
+              "imgURL": "",
+              "mediaId": "12345"
+            },
+            {
+              "title": "cell 1",
+              "desc": "Cell 1",
+              "imgURL": "",
+              "mediaId": "12345"
             }
             ]
         }

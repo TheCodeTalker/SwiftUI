@@ -17,10 +17,6 @@ class NetworkManager {
         return trays.assets!
     }
     
-    static func getDynamicResponse() {
-        
-    }
-    
     static func loadJSON<T: Decodable>(name: String) -> T? {
         guard let filePath = Bundle.main.url(forResource: name, withExtension: "json") else {
             return nil

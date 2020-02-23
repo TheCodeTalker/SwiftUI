@@ -83,6 +83,8 @@ struct GridView <Data, Content>: View
         
        GeometryReader { geometry in
          ScrollView(showsIndicators: false) {
+            Text("GridView").foregroundColor(.black).bold()
+            Spacer()
            VStack(spacing: self.vSpacing) {
              ForEach((0..<self.rows).map { GridIndex(id: $0) }) { row in
                self.rowAtIndex(row.id * self.cols,
@@ -131,7 +133,7 @@ struct MediaCell: View {
     VStack() {
       Text(media.title ?? "").font(.headline).foregroundColor(.black)
       Text(media.desc ?? "trayname").font(.subheadline).foregroundColor(.black)
-    }
+        }
   }
 }
 

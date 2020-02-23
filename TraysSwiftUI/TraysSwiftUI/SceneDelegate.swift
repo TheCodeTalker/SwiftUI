@@ -22,14 +22,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the SwiftUI view that provides the window contents.
  
         let tabularTrays = NetworkManager.getTabResponse()
-        let homeScreen = HomeScreen(trays: tabularTrays)
-        let grid = GridView(tabularTrays[0].items!, columns: 3, columnsInLandscape: 5, vSpacing: 10, hSpacing: 10, vPadding: 5, hPadding: 5) { item in
-            MediaCell(media: item)
+//        let homeScreen = HomeScreen(trays: tabularTrays)
+//        let grid = GridView(tabularTrays[0].items!, columns: 3, columnsInLandscape: 5, vSpacing: 10, hSpacing: 10, vPadding: 5, hPadding: 5) { item in
+//            MediaCell(media: item)
+//        }
+        let grid = ListView(tabularTrays[0].items!) { rowItem  in
+            MediaRowCell(_media: rowItem)
         }
+        
+        let loginForm = LoginView(loginViewModel: LoginViewModel())
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: grid)
+            window.rootViewController = UIHostingController(rootView: loginForm)
             self.window = window
             window.makeKeyAndVisible()
         }

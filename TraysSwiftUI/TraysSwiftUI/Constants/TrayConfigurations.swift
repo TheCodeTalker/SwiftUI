@@ -19,6 +19,7 @@ enum TrayLayout: String,Codable {
     case carousel
     case mastHeadTray
     case gridTray
+    case listTray
     case segmentedTray
 }
 
@@ -30,3 +31,6 @@ enum TrayType: String,Codable {
     case recommendation
 }
 
+enum CustomError: Error {
+    case failed
+}
