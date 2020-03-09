@@ -41,11 +41,14 @@ struct MediaRowCell: View {
     }
     
     var body: some View {
+        NavigationLink(destination:MediaDetailView()) {
+
         HStack {
             Text(media.desc ?? "")
             Text(media.title ?? "")
         }
         .aspectRatio(contentMode: .fill)
         .foregroundColor(.accentColor)
+        }
     }
 }

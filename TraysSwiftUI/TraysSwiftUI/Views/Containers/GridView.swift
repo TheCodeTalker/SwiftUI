@@ -99,7 +99,7 @@ struct GridView <Data, Content>: View
              }
            }
          }
-         .padding(.horizontal, self.hPadding)
+         //.padding(.horizontal, self.hPadding)
          .padding(.vertical, self.vPadding)
      }
 
@@ -127,15 +127,25 @@ struct GridView <Data, Content>: View
 }
 
 @available(iOS 13.0.0, *)
-struct MediaCell: View {
-  var media: Media
+struct MediaCell: View,Identifiable {
+    var media: Media
     var body: some View {
     VStack() {
       Text(media.title ?? "").font(.headline).foregroundColor(.black)
       Text(media.desc ?? "trayname").font(.subheadline).foregroundColor(.black)
     }
-    
   }
+}
+
+extension View {
+    func fillParent(alignment:Alignment = .center) -> some View {
+        return GeometryReader { geometry in
+            self
+                .frame(width: geometry.size.width,
+                       height: geometry.size.height,
+                       alignment: alignment)
+        }
+    }
 }
 
 //GeometryReader
