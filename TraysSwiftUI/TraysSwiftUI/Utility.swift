@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 class Utility {
@@ -31,4 +32,10 @@ class Utility {
         return json
     }
     
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }
