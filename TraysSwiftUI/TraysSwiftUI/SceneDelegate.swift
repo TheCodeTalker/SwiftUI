@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             MediaRowCell(_media: rowItem)
         }
         
-        let loginForm = LoginView(loginViewModel: LoginViewModel())
+        let loginForm = LoginView(loginViewModel: LoginViewModel()).background(Color.white).edgesIgnoringSafeArea(.all)
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
