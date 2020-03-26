@@ -19,27 +19,33 @@ struct HomeScreen: View {
     var body: some View {
         //id :  keypath/ identifiable / Hashable
         GeometryReader() { geometry in
-            List {
-                ForEach(self.viewModel.trays) { tray in
-                    self.constructTray(tray: tray, geometry: geometry)
-                }
-            }.padding(.top, 10)
-        }
-
+            NavigationView {
+                    List(self.viewModel.trays){ tray in
+                        self.constructTray(tray: tray, geometry: geometry)
+                    }
+                        .navigationBarTitle(Text("Swift UI"))
+                
+            }
+        }.background(Color.red)
     }
     
     func constructTray(tray:Tray,geometry:GeometryProxy) -> some View {
         switch  tray.trayLayout {
         case .gridTray:
-                let grid = GridView(tray.items!, columns: 3, columnsInLandscape: 5, vSpacing: 5, hSpacing: 5, vPadding: 5, hPadding: 5,geometry: geometry) { item in
-                    MediaCell(media: item).background(Color.yellow)
-                }
-               return  AnyView(grid)
+            return AnyView(
+                NavigationLink(destination: DetailsScreen()) {
+                 GridView(tray.items!, columns: 3, columnsInLandscape: 5, vSpacing: 5, hSpacing: 5, vPadding: 5, hPadding: 5,geometry: geometry) { item in
+                     MediaCell(media: item).background(Color.yellow)
+                    }
+                }.background(Color.red))
         case .listTray:
-                let list = ListView(tray.items!) { rowItem  in
-                    MediaRowCell(_media: rowItem)
+            return AnyView(
+                NavigationLink(destination: DetailsScreen()) {
+                ListView(tray.items!) { rowItem  in
+                            MediaCustomRowCell(_media: rowItem)
                 }
-               return  AnyView(list)
+            }
+        )
         default:
               return  AnyView(Text("Unknown type"))
         }

@@ -85,7 +85,7 @@ struct GridView <Data, Content>: View
         
         VStack {
             Text("GridView").foregroundColor(.black).bold()
-            Spacer()
+            //Spacer(minLength: 20)
            VStack(spacing: self.vSpacing) {
              ForEach((0..<self.rows).map { GridIndex(id: $0) }) { row in
                self.rowAtIndex(row.id * self.cols,
