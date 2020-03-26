@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35BEA140241676090064A512 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BEA13F241676090064A512 /* DetailScreen.swift */; };
+		355383992416448D009A32D2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355383982416448D009A32D2 /* UIColor.swift */; };
 		443BB08223D9EF38003C5A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BB08123D9EF38003C5A40 /* AppDelegate.swift */; };
 		443BB08423D9EF38003C5A40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BB08323D9EF38003C5A40 /* SceneDelegate.swift */; };
 		443BB08823D9EF39003C5A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443BB08723D9EF39003C5A40 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		35BEA13F241676090064A512 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		355383982416448D009A32D2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		443BB07E23D9EF38003C5A40 /* TraysSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraysSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443BB08123D9EF38003C5A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443BB08323D9EF38003C5A40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				443BB08C23D9EF39003C5A40 /* LaunchScreen.storyboard */,
 				443BB08F23D9EF39003C5A40 /* Info.plist */,
 				443BB08923D9EF39003C5A40 /* Preview Content */,
+				355383982416448D009A32D2 /* UIColor.swift */,
 			);
 			path = TraysSwiftUI;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				443BB08223D9EF38003C5A40 /* AppDelegate.swift in Sources */,
 				44EFEDE723EFF79D00F41BEF /* Reference.swift in Sources */,
 				44E129982402BE9B0088FEC1 /* MediaDetailView.swift in Sources */,
+				355383992416448D009A32D2 /* UIColor.swift in Sources */,
 				443BB0A123D9EFF4003C5A40 /* TrayModel.swift in Sources */,
 				4489C7A923FDA8E0002C4AD6 /* LoginView.swift in Sources */,
 				443BB08423D9EF38003C5A40 /* SceneDelegate.swift in Sources */,

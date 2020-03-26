@@ -47,6 +47,8 @@ struct MediaCustomRowCell: View {
         }
     
     var body: some View {
+        NavigationLink(destination:MediaDetailView()) {
+
         HStack {
             Image(systemName: "person.circle.fill")
             VStack {
