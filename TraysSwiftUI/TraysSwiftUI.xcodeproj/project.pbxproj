@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35BEA140241676090064A512 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BEA13F241676090064A512 /* DetailScreen.swift */; };
 		355383992416448D009A32D2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355383982416448D009A32D2 /* UIColor.swift */; };
 		443BB08223D9EF38003C5A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BB08123D9EF38003C5A40 /* AppDelegate.swift */; };
 		443BB08423D9EF38003C5A40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BB08323D9EF38003C5A40 /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35BEA13F241676090064A512 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		355383982416448D009A32D2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		443BB07E23D9EF38003C5A40 /* TraysSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraysSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443BB08123D9EF38003C5A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				443BB09723D9EFF4003C5A40 /* HomeScreen.swift */,
 				4489C7A723FDA8A7002C4AD6 /* Containers */,
 				4489C7A823FDA8E0002C4AD6 /* LoginView.swift */,
+				35BEA13F241676090064A512 /* DetailScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				443BB0A223D9EFF4003C5A40 /* TrayConfigurations.swift in Sources */,
 				443BB0A623D9F01D003C5A40 /* GridView.swift in Sources */,
 				4489C7AC23FDB6D9002C4AD6 /* LoginViewModel.swift in Sources */,
+				35BEA140241676090064A512 /* DetailScreen.swift in Sources */,
 				4489C7B223FFF793002C4AD6 /* Router.swift in Sources */,
 				443BB09F23D9EFF4003C5A40 /* Utility.swift in Sources */,
 				443BB08223D9EF38003C5A40 /* AppDelegate.swift in Sources */,
